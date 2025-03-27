@@ -1,0 +1,85 @@
+/* Estilos base del sidebar */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  overflow-y: auto;
+  z-index: 1050;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+/* Header del carrito */
+.cart-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+/* Items del carrito */
+.cart-item-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Botones */
+.btn-outline-danger {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Media queries para pantallas más grandes */
+@media (min-width: 576px) {
+  .cart-sidebar {
+    width: 400px;
+    right: -400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cart-sidebar {
+    width: 450px;
+    right: -450px;
+  }
+}
+
+/* Efecto shake para los botones */
+.shake {
+  animation: shake 0.3s ease-in-out, pulse 0.3s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes pulse {
+  0% { background-color: initial; }
+  50% { background-color: var(--bs-btn-hover-bg); color: white; }
+  100% { background-color: initial; }
+}
