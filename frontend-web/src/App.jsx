@@ -27,13 +27,13 @@ function App() {
 export default App; */
 
 import React from 'react';
-import Navbar from './components/Navbar';
-import ProductList from './components/ProductList';
-import Footer from './components/Footer';
-import CartSidebar from './components/CartSidebar';
+import Navbar from './components/public/Navbar';
+import ProductList from './components/public/ProductList';
+import Footer from './components//public/Footer';
+import CartSidebar from './components/public/CartSidebar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Layout from './components/Layout';
-import './components/CartSidebar.css';
+import Layout from './components/public/Layout';
+import './components/public/CartSidebar.css';
 
 function App() {
   return (

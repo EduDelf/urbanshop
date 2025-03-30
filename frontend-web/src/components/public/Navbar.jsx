@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { toggleCart } from '../redux//slices/cartSlice'; 
+import { toggleCart } from '../../redux/slices/cartSlice'; 
 
 export default function Navbar() {
   const dispatch = useDispatch();

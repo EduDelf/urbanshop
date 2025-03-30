@@ -1,7 +1,7 @@
 // src/components/CartSidebar.jsx
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeFromCart, toggleCart, clearCart } from '../redux/slices/cartSlice';
+import { removeFromCart, toggleCart, clearCart } from '../../redux/slices/cartSlice';
 
 export default function CartSidebar() {
   const dispatch = useDispatch();

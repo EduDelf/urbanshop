@@ -1,0 +1,11 @@
+/* Estilos específicos para admin */
+.admin-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 100vh;
+  }
+  
+  .admin-content {
+    padding: 2rem;
+    background: #f5f7fa;
+  }
